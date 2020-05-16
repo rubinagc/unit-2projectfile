@@ -1,0 +1,340 @@
+* {
+   box-sizing: border-box; 
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header, .nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    align-self: center;
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.nav{
+    margin-top: 2em;
+}
+.nav a {
+    display: block;
+  border: 1px solid rgb(224, 84, 59);
+  text-align: center;  
+  font-weight: 500;
+  font-size: 1.15em;
+  padding: 0.6em;
+  border-radius: 3px;
+}
+
+ul.nav {
+    padding: 8px;
+    margin-top: 0.5em;
+}
+ul {
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+}
+
+.nav li{
+margin: 2px;
+background-color: rgb(151, 146, 146);
+
+}
+.nav a {
+    text-decoration: none;
+   color: rgb(15, 14, 14);
+}
+
+.nav a:hover {
+    color: rgb(171, 238, 64);
+}
+.profile{
+width: 250px;
+height: 150px;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 5px;
+}
+
+.para {
+    color: rgb(109, 105, 105);
+}
+
+.head {
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+.title{
+    margin-top: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    width: 299px;
+    height: 200px;
+    margin-top: 30px;
+    padding-right: 10px;
+   
+}
+
+.page1, .page2, .page3,
+.page4, .page5, .page6 {
+
+    text-align: center;
+    font-size: 1em;
+    color: rgb(71, 66, 66);
+    padding: 5px;
+}
+
+.page1 p, .page2 p, .page3 p,
+.page4 p, .page5 p, .page6 p {
+
+    padding: 0 0.5em 0 0.5em;
+    font-size: 1.06em;
+}
+
+.wrap{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+header, footer{
+    background-color: rgb(118, 221, 207);
+    width: 100%;
+}
+
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+footer {
+    
+    text-align: center;
+}
+
+.cont {
+  
+    padding-top: 2.5em;
+
+}
+
+footer p {
+    padding: 1em;
+    font-size: 1.08em;
+    margin-bottom: 0;
+    
+}
+
+.phone {
+    padding: 10px;
+    word-spacing: 0.5em;
+
+}
+
+.email {
+    padding-bottom: 2em;
+    margin-bottom: 1.5em;
+    word-spacing: 0.5em;
+}
+
+#main-footer {
+    display: none;
+}
+
+#back2top {
+    display: block;
+}
+
+.student {
+    float: left;
+}
+
+.back {
+    float: right;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.lastnav {
+    padding: 1em;
+    margin-bottom: 1.5em;
+     
+}
+
+@media (min-width: 768px)
+{
+    .nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+
+    .nav a {
+        border: none;
+    }
+
+    .nav a:hover {
+        color: green;
+    }
+
+   .nav li {
+        background-color: transparent;
+    }
+
+    .para {
+        text-align: left;
+        padding-left: 2em;
+        font-size: 1.25em;
+        
+       
+    }
+
+
+    .profile {
+        float: right;
+        width: 300px;
+        height: 200px;
+    }
+
+    img {
+        width: 350px;
+        height: 200px;
+        padding:0;
+        margin: 0;
+       
+    }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 50%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    #back2top {
+        display:none;
+    }
+
+    #main-footer{
+        display: block;
+    }
+
+.oldnav li {
+        float: right;     
+    }
+
+    a {
+        padding: 10px;
+        font-weight: bold;
+    }
+
+.student {
+    padding: 0 0 0 10px;
+}
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .main-header {
+        flex-direction: row;
+    
+    }
+     body, header, footer {
+        background-color: rgb(206, 197, 197); 
+     }
+.title {
+
+    margin-top: 0;
+    padding-top: 2em;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+
+}
+
+.profile {
+width: 400px;
+height: 250px;
+
+}
+    
+    .name {
+        margin-right: auto;
+        padding-left: 2.5em;
+    }
+
+    ul.nav {
+        margin-top: 1.75em;
+        align-self: center;
+    }
+
+    .wrap1, .wrap2{
+        width: 98%;
+        margin: 0 auto;
+    }
+
+        .wrap{
+            width: 98%;
+            margin: 0 auto;
+            background-color:white;
+        }
+
+        .page1, .page2, .page3,
+.page4, .page5, .page6 {
+
+    padding: 0;
+}
+
+        .container {
+            width: 98%;
+            margin: 0 auto;
+        }
+        .col {
+            flex: 1 33.33%;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+    }
